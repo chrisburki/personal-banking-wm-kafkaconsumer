@@ -22,7 +22,7 @@ public class ConsumerService {
 
     private CountDownLatch latch = new CountDownLatch(3);
 
-    @KafkaListener(topics = "buc") //, groupId = "group_id", containerFactory = "kafkaListenerContainerFactory")
+    @KafkaListener(topics = "buc") //, groupId = "wm", containerFactory = "kafkaListenerContainerFactory")
     public void receiveMessage(String messageContent) {
         System.out.println("Received Messasge: " + messageContent);
         latch.countDown();

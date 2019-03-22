@@ -25,7 +25,7 @@ public class KafkaConsumerConfig {
         Map<String, Object> props = new HashMap<>();
         System.out.println("bootstrapServerAddress: " + bootstrapServerAddress);
         props.put(ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG, bootstrapServerAddress);
-        props.put(ConsumerConfig.GROUP_ID_CONFIG, "group_id");
+        props.put(ConsumerConfig.GROUP_ID_CONFIG, "wm");
         props.put(ConsumerConfig.KEY_DESERIALIZER_CLASS_CONFIG, StringDeserializer.class);
         props.put(ConsumerConfig.VALUE_DESERIALIZER_CLASS_CONFIG, StringDeserializer.class);
 
